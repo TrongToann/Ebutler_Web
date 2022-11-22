@@ -1,0 +1,171 @@
+:root {
+    --txt-color: #6B7280;
+    --primary-color: #273A89;
+    --red-bg: #FEE2E2;
+    --red-txt: #991B1B;
+    --blue-bg: #E0E7FF;
+    --blue-txt: #3C30A3;
+    --yellow-bg: #FEF9C3;
+    --yellow-txt: #854D0E;
+    --purple-bg: #F3E8FF;
+    --purple-txt: #6B21A8;
+    --border-color: #E5E7EB;
+    --hover-bg: #273A89;
+    --hover-color: white;
+    --grey-bg: #F9FAFB;
+    --round: 9999px;
+    --opacity: 1;
+    --list-h: 2000px;
+}
+
+.full-w {
+   width: 100%;
+}
+
+/* Margin start */
+.m-y-0 {
+    margin: .5rem 0;
+}
+
+.m-x-0 {
+    margin: 0 .5rem;
+}
+
+.m-y-1 {
+    margin: 1rem 0;
+}
+
+.m-x-1 {
+    margin: 0 1rem;
+}
+
+.m-y-2 {
+    margin: 2rem 0;
+}
+
+.m-x-2 {
+    margin: 0 2rem;
+}
+
+.m-y-3 {
+    margin: 3rem 0;
+}
+
+.m-x-3 {
+    margin: 0 3rem;
+}
+
+/* Margin end */
+
+/* Padding start */
+.pad-0 {
+    padding: .5rem;
+}
+
+.pad-x-0 {
+    padding: 0 .5rem;
+}
+
+.pad-y-0 {
+    padding: .5rem 0;
+}
+
+.pad-1 {
+    padding: 1rem;
+}
+
+.pad-x-1 {
+    padding: 0 1rem;
+}
+
+.pad-y-1 {
+    padding: 1rem 0;
+}
+
+.pad-2 {
+    padding: 2rem;
+}
+
+.pad-x-2 {
+    padding: 0 2rem;
+}
+
+.pad-y-2 {
+    padding: 2rem 0;
+}
+
+.pad-3 {
+    padding: 3rem;
+}
+
+.pad-x-3 {
+    padding: 0 3rem;
+}
+
+.pad-y-3 {
+    padding: 3rem 0;
+}
+
+/* Padding end */
+
+/* text */
+
+.txt-lg,
+.txt-md,
+.txt-sm,
+.txt-xs {
+    color: var(--txt-color);
+}
+
+.txt-xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.txt-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.txt-md {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.txt-sm {
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+.txt-xs {
+    font-size: .75rem;
+    line-height: 1rem;
+}
+
+.bold {
+    color: #0F172A;
+    font-weight: 700;
+}
+
+.ellipsis {
+    display: block;
+    flex-wrap: wrap;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-wrap: break-word;
+}
+
+.form-control.form-control-sm {
+    border: 1px solid #c7c7c7;
+    min-height: 28px;
+    height: 28px;
+}
+
+.dataTables_empty {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+

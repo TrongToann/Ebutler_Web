@@ -1,0 +1,290 @@
+/* Root start */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --txt-color: #6B7280;
+    --primary-color: #273A89;
+}
+/* Root end */
+
+/* display start */
+.hide {
+    display: none;
+}
+/* display end */
+
+/* Padding start */
+.pad-2 {
+    padding: 2rem;
+}
+
+.pad-y-32 {
+    padding: 32px 0;
+}
+
+.pad-x-32 {
+    padding: 0 32px;
+}
+/* Padding end */
+
+/* Margin start */
+.m-y-12 {
+    margin: 12px 0;
+}
+
+.m-x-12 {
+    margin: 0 12px;
+}
+
+.m-y-24 {
+    margin: 24px 0;
+}
+
+.m-x-24 {
+    margin: 0 24px;
+}
+
+.m-y-32 {
+    margin: 32px 0;
+}
+
+.m-x-32 {
+    margin: 0 32px;
+}
+/* Margin end */
+
+/* Position start */
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    z-index: 1;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 9999;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.top {
+    top: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+/* Position end */
+
+
+/* Text start */
+.txt-lg,
+.txt-md,
+.txt-sm {
+    color: var(--txt-color);
+}
+
+.txt-xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.txt-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.txt-md {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.bold {
+    color: #0F172A;
+    font-weight: 700;
+}
+/* Text end */
+
+/* Navigation start */
+.navi--link {
+    margin-left: 56px;
+    height: 100%;
+}
+
+.navi--link:first-child {
+    margin-left: 0;
+}
+
+.navi--link.bold::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--primary-color);
+    position: absolute;
+}
+/* Navigation end */
+
+/* Flex start */
+.flex,
+.flex-center,
+.flex-horizon-center,
+.flex-vertical-center,
+.flex-around,
+.flex-between,
+.flex-end {
+    display: flex;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-horizon-center {
+    justify-content: center;
+}
+
+.flex-vertical-center {
+    align-items: center;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+/* Flex end */
+
+/* Input start */
+.input {
+    flex: 1;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: 2px solid #E5E7EB;
+    outline: none;
+    padding: .75rem 1rem;
+}
+
+.input-icon {
+    background-color: #F9FAFB;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border: 2px solid #E5E7EB;
+    border-right: none;
+    color: #6B7280;
+    height: 52px;
+    width: 60px;
+}
+/* Input end */
+
+/* Image start */
+.image {
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.image > img {
+    width: 100%;
+    object-fit: contain;
+}
+/* Image end */
+
+/* Button start */
+.btn-lg {
+    padding: .875rem 1.5rem;
+    background-color: #0F172A;
+    color: white;
+    border-radius: 2rem;
+    --tw-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);
+    --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),0 8px 10px -6px var(--tw-shadow-color);
+    box-shadow: 0 0 #0000,0 0 #0000,var(--tw-shadow);
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+}
+/* Button end */
+
+/* Block start */
+.block-border {
+    border-radius: 0.5rem;
+    border: 2px solid #E5E7EB;
+    overflow: hidden;
+}
+/* Block end */
+
+/* Status start */
+.delivered {
+    color: green;
+}
+
+.pending {
+    color: #0EA5E9;
+}
+/* Status end */
+
+/* Order start */
+.order-card {
+    height: 148px;
+    border-bottom: 1px solid #E5E7EB;
+    padding: 12px 0;
+}
+
+.order-card:last-child {
+    border: none;
+}
+
+.order-img {
+    width: 96px; 
+    height: 112px; 
+    background-color: #F9FAFB;
+    border-radius: 1rem;
+}
+
+.order-img > img {
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.order-price {
+    border-radius: .5rem;
+    padding: .375rem .625rem;
+    width: fit-content;
+    height: 50%;
+    color: #4ADE80; 
+    border: 2px solid #4ADE80;
+    font-size: .875rem;
+}
+/* Order end */
+
+@media (min-width: 1024px) {
+    .navi--link:hover {
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+

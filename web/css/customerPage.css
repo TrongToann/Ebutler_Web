@@ -1,0 +1,197 @@
+
+/* Help Block Start */
+
+.help-block__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.help-block__img {
+    text-align: center;
+}
+
+.help-block__img > img{
+    width: 50%;
+    height: 50%;
+}
+
+.help-block__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Help Block End */
+
+/* product card start*/
+.block__title {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 15%;
+    top: -3%;
+    visibility: hidden;
+    transition: all ease-in-out 0.15s;
+}
+
+.block__text {
+    width: 100%;
+}
+
+.card-extend {
+    visibility: hidden;
+    transition: all ease-in-out 0.15s;
+    padding: 4px 12px;
+}
+
+.block__item--category:hover {
+    transform: translateY(-5%);
+    cursor: pointer;
+}
+/* product card end */
+
+/* Card start*/
+.card {
+    height: 200px;
+    border-radius: 20px;
+    border: none;
+    flex: 1 0 100%;
+}
+
+.card-item:nth-of-type(4n+1) .card {
+    background-color: var(--yellow-bg);
+}
+
+.card-item:nth-of-type(4n+2) .card {
+    background-color: var(--blue-bg);
+}
+
+.card-item:nth-of-type(4n+3) .card {
+    background-color: var(--purple-bg);
+}
+
+.card-item:nth-of-type(4n) .card {
+    background-color: var(--red-bg);
+}
+
+.card-detail {
+    height: 100%;
+}
+
+.category_card {
+    transition: all ease-in-out 0.15s;
+}
+
+.category_card:hover {
+    transform: translateY(-5%);
+    cursor: pointer;
+}
+
+.category_card:hover .category_detail a{
+    color: #0FA5EB;
+}
+
+.category_detail a{
+    color: black;
+}
+
+.category_card:nth-of-type(7n+6) .category_decoration {
+    width: 15rem;
+    content: url("https://chisnghiax.com/ciseco/static/media/explore1.775937cb2511726e48c3fc70025fab60.svg");
+}
+
+.category_card:nth-of-type(7n+1) .category_decoration  {
+    width: 15rem;
+    content: url("https://chisnghiax.com/ciseco/static/media/explore2.1ceb7512bd65219296c27bc4ecc85ff6.svg");
+}
+
+.category_card:nth-of-type(7n+2) .category_decoration  {
+    width: 15rem;
+    content: url("https://chisnghiax.com/ciseco/static/media/explore3.94b86e236316334ee0f6d22e7c41e3bc.svg");
+}
+
+.category_card:nth-of-type(7n+3) .category_decoration  {
+    width: 15rem;
+    content: url("https://chisnghiax.com/ciseco/static/media/explore9.9cb58d1f5a9bf47be0be877012199caa.svg");
+}
+
+.category_card:nth-of-type(7n+4) .category_decoration  {
+    width: 15rem;
+    content: url("https://chisnghiax.com/ciseco/static/media/explore5.31cdd38104cf6ff9b87f13d23831c063.svg");
+}
+
+.category_card:nth-of-type(7n+5) .category_decoration  {
+    width: 15rem;
+    content: url("https://chisnghiax.com/ciseco/static/media/explore6.d820796c6233d6fd068004c49905dda6.svg");
+}
+
+
+
+
+/* Card end */
+
+/* Slider start*/
+.slider-main {
+    position: relative;
+}
+
+.direction {
+    border-radius: 9999px;
+    padding: 8px 16px;
+    border: 3px solid transparent;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--primary-color);
+    color: white;
+    transition: all ease-in-out 0.15s;
+}
+
+.direction:hover {
+    cursor: pointer;
+    background-color: #b81f32;
+}
+/* Slider end */
+
+.dropdown-item {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    line-height: 1.54;
+    font-size: 0.9375rem;
+    width: 100%;
+    font-weight: 400;
+    padding: 0.532rem 1.25rem;
+}
+
+.dropdown-item > i {
+    margin-right: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .card {
+        height: 250px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .content > p {
+        display: none;
+    }
+
+    .direction {
+        display: none;
+    }
+    
+    .grid {
+        overflow: scroll;
+    }
+
+    .block__title {
+        visibility: visible;
+    }
+}

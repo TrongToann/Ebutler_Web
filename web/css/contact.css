@@ -1,0 +1,134 @@
+/* slider */
+.slider
+{
+    height: calc(var(--slider-height)/1.75);
+    position: relative;
+    display: flex;
+    margin-bottom: 48px;
+}
+
+.slider__main
+{
+    flex: 1;
+    display: flex;
+    background-image: url(../img/slider_contact.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    flex-direction: column;
+    position: relative;
+    padding-left: 5%;
+    justify-content: center;
+    border-bottom: 1px solid var(--primary-color);
+    border-top: 1px solid var(--primary-color);
+}
+
+.slider__main h1
+{
+    font-size: 3.6rem;
+    margin: 0 0 12px 0;
+}
+
+.slider__main-title
+{
+    position: absolute;
+    bottom: -10%;
+    margin-left: 5%;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    z-index: 998;
+}
+
+.slider__main-title a
+{
+    text-decoration: none;
+    color: var(--other-color);
+    font-size: 1.5rem;
+    line-height: 22px;
+    padding: 14px 20px; 
+    font-weight: 400;
+}
+
+.slider__main-title a i
+{
+    color: var(--other-color);
+    margin-right: 2px;
+    font-size: 1.2rem;
+    opacity: 0.5;
+}
+
+.body__container
+{
+    width: 90%;
+}
+
+/* form */
+.form__heading-info
+{
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin: 24px 0;
+}
+
+.form__body-input
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.input__item
+{
+    width: 50%;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    margin: 12px 0;
+}
+
+.input__item--submit
+{
+    color: white;
+    background-color: var(--primary-color);
+    padding: 24px 48px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    margin: 36px 0;
+    border: none;
+    float: right;
+    border-radius: 2px;
+}
+
+.input__item--submit:hover
+{
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.form__body-issue
+{
+    font-size: 0.8rem;
+    margin: 24px 0;
+}
+
+.form__body-issue-input
+{
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 24px 0;
+}
+
+.form__body-issue-input input
+{
+   cursor: pointer;
+}
+
+.form__body-issue-input label
+{
+    margin-right: 24px;
+}
+

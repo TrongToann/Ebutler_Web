@@ -1,0 +1,120 @@
+:root
+{
+    --primary-color: #BD6F29;
+    --heading-color: #171717;
+    --text-color: #949494;
+    --other-color: white; 
+    --header-height: 90px;
+    --footer-height: 120px;
+    --slider-height: 480px;
+    --form-height: 560px;
+}
+
+*
+{
+    box-sizing: inherit;
+}
+
+html
+{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid
+{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width
+{
+    width: 100%;
+}
+
+.grid__row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* modal css */
+.modal
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+.modal--show
+{
+    display: flex;
+    z-index: 1000;
+}
+
+.modal__overlay
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body
+{
+    min-width: 65%;
+    margin: auto;
+    z-index: 1;
+    background-color: var(--other-color);
+}
+
+.btn
+{
+    min-width: 142px;
+    height: 32px;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px;
+}
+
+.btn-size-s
+{
+    height: 28px;
+    font-size: 1.3rem;
+    padding: 0 24px;
+    border-radius: 3px;
+}
+
+.btn--normal:hover
+{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.btn--primary
+{
+    color: var(--other-color);
+    background-color: var(--primary-color);
+}
+
+.btn--disable
+{
+    color: #949494 !important;
+    background-color: #c3c3c3 !important;
+    cursor: default !important;
+}
+
+
+
+
